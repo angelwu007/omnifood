@@ -21,6 +21,13 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+/* .clearfix{zoom:1} */
+.clearfix:after{
+    content:' ';
+    clear:both;
+    display:block;
+}
+
 /*-------------------------------------------*/
 /* reusable components*/
 /*-------------------------------------------*/
@@ -209,13 +216,100 @@ header{
 /*-------------------------------------------*/
 /* features section */
 /*-------------------------------------------*/
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
 
-.four-col{
+.flex-col{
     display:flex;
 }
 
 /*-------------------------------------------*/
 /* Meals*/
 /*-------------------------------------------*/
+.section-meals{
+    padding:0;
+}
 
-.meals-
+.meals-showcase{
+    list-style: none;
+    width:100%;
+}
+
+/* images will auto fit to the container of 25% */
+.meals-showcase li{
+    width:25%;
+    float:left;
+    display:block;
+}
+
+
+.meal-photo{
+    /* width:100%; */
+    overflow:hidden;
+    background-color: #000;
+}
+
+/* setting width:100% will auto fit the images to their containers' width */
+.meal-photo img{
+    opacity: 0.7;
+    height:auto;
+    width:100%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity:1;
+}
+
+
+
+/*-------------------------------------------*/
+/* How it works*/
+/*-------------------------------------------*/
+.step-box{
+    background-color: #f4f4f4;
+}
+
+
+.steps-box:first-child{
+    text-align:right;
+    padding-right:3%;
+    margin-top:30px;
+
+}
+
+.steps-box:last-child{
+    padding-left:3%;
+    margin-top:80px;
+}
+
+.app-screen{
+    width:40%;
+}
+
+.work-steps{
+    margin-bottom:50px;
+}
+
+.work-steps div{
+    border: 2px solid #e67e22;
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    text-align: center;
+    padding:5px;
+    color: #e67e22;
+    float:left;
+    font-size: 150%;
+    margin-right:25px;
+    display:inline block;
+}
+
+.btn-app img{
+    height:50px;
+    width:auto;
+    margin-right:10px;
+}
