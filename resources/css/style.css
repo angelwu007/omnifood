@@ -111,7 +111,38 @@ h2:after{
     margin: 30px 0 ;
 }
 
+.icon-small{
+    display:inline block;
+    width:30px;
+    text-align:center;
+    color:#e67e22;
+    margin-right:10px;
+    font-size:110%;
+    margin-right:10px;
 
+    /* secret to align text to icon */
+    line-height: 110%;
+    vertical-align: middle;
+    margin-top:-3px;
+}
+
+/*-------- Links --------*/
+
+a:link,
+a:visited{
+    padding-bottom: 1px;
+    text-decoration: none;
+    color:#e67e22;
+    border-bottom: 1px solid #e67e22;
+
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition:border-bottom 0.2s, color 0.2s;
+}
 
 /*-------- Buttons --------*/
 
@@ -168,6 +199,8 @@ header{
     background-position: center;
     background-size: cover;
     height:100vh;
+    background-attachment: fixed;
+
 }
 
 .hero-text-box{
@@ -269,7 +302,7 @@ header{
 /*-------------------------------------------*/
 /* How it works*/
 /*-------------------------------------------*/
-.step-box{
+.section-steps{
     background-color: #f4f4f4;
 }
 
@@ -312,4 +345,53 @@ header{
     height:50px;
     width:auto;
     margin-right:10px;
+}
+
+/*-------------------------------------------*/
+/* CITIES*/
+/*-------------------------------------------*/
+
+/* flexbox has assigned a 25% of width, so we don't have to.  */
+/* .section-cities .box{
+    width:25%;
+} */
+
+.section-cities img{
+    width:100%;
+    height:auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+/*-------------------------------------------*/
+/* TESTIMONIALS*/
+/*-------------------------------------------*/
+
+.section-testimonials{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./img/back-customers.jpg');
+    background-size: cover;
+    color:#fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding:2%;
+    font-style: italic;
+    line-height:145%
+}
+
+cite img{
+border-radius: 50%;
+height:50px;
+margin-right: 10px;
+vertical-align:middle;
+}
+
+cite{
+    margin-top:30px;
+    display:block;
+    font-size: 90%;
 }
