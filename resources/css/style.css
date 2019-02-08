@@ -19,6 +19,7 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /* .clearfix{zoom:1} */
@@ -312,6 +313,9 @@ header{
     background-color: #f4f4f4;
 }
 
+.section-steps    margin-right:10px;
+
+
 
 .steps-box:first-child{
     text-align:right;
@@ -324,6 +328,7 @@ header{
     padding-left:3%;
     margin-top:80px;
 }
+
 
 .app-screen{
     width:40%;
@@ -351,6 +356,10 @@ header{
     height:50px;
     width:auto;
     margin-right:10px;
+}
+
+btn-app{
+    border-bottom: 0;
 }
 
 /*-------------------------------------------*/
@@ -506,4 +515,58 @@ cite{
 /* this is to get rip of the blueline when selecting an input */
 *:focus{
     outline: none;
+}
+
+
+/*-------------------------------------------*/
+/* FOOTER */
+/*-------------------------------------------*/
+
+footer{
+    background-color: rgb(88, 88, 88);
+    padding:50px;
+   color:#888;
+   font-size: 80%;
+}
+
+.footer-nav{
+    width:100%;
+    list-style: none;
+    
+}
+
+.icon-links{
+    width:100%;
+    margin:0 auto;
+    list-style: none;
+    text-align: end;
+    font-size:130%;
+}
+
+.footer-nav li,
+.icon-links li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.icon-links li:last-child{
+    margin-right:0;
+}
+
+
+.footer-nav li a,
+.icon-links li a{
+    border:0;   
+    color:#888;
+}
+.footer-nav li a:hover,
+.icon-links li a:hover{
+    color:#fff;
+}
+
+
+
+footer p{
+    text-align: center;
+    margin:25px 0;
 }
