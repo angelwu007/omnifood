@@ -568,3 +568,18 @@ footer p{
     text-align: center;
     margin:25px 0;
 }
+
+/*-------------------------------------------*/
+/* ANIMATIONS */
+/*-------------------------------------------*/
+
+.js-wp-1,
+.js-wp-2{
+    opacity: 0;
+}
+
+/* this selector means that we have both classes at the same time */
+.js-wp-1.animated,
+.js-wp-1.animated{
+    opacity: 1;
+}
