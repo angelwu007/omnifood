@@ -17,7 +17,15 @@ $(document).ready(function(){
 
     $('.js-wp-3').waypoint(function(direction){
         if(direction === 'down'){
-            $('.js-wp-3').addClass('animated fadeInUp')
+            $('.js-wp-3').addClass('animated flipInY')
+        }
+    },{
+        offset:'50%'
+    })
+
+    $('.js-wp-4').waypoint(function(direction){
+        if(direction === 'down'){
+            $('.js-wp-4').addClass('animated flash')
         }
     },{
         offset:'50%'
