@@ -77,7 +77,36 @@
         height: 85px;
     }
 
-    .main-nav{display:none;}
+    .main-nav{
+        float:left;
+        margin-top:30px;
+        list-style: none;
+    }
+    
+    .main-nav li{
+        display:block;
+        margin-right:40px;
+        
+    }
+    
+    .main-nav li a{
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size:90%;
+        transition: border-bottom 0.2s;
+        border-bottom: 1px solid transparent;
+        padding: 5px 0;
+    
+    }
+
+    .navbar i{
+        float:right;
+        color:#fff;
+        font-size: 170%;
+        margin-top: 30px;
+    }
+
     .long-copy{
         width:100%;
         margin:0;

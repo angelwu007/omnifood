@@ -1,4 +1,14 @@
 $(document).ready(function(){
+    $('.js-section-features').waypoint(direction=>{
+        if(direction === 'down'){
+            $('.navbar').addClass('sticky')
+        }else{
+            $('.navbar').removeClass('sticky')
+        }
+    },{
+        offset:'60px'
+    })
+
     $('.js-wp-1').waypoint(function(direction){
         if(direction === 'down'){
             $('.js-wp-1').addClass('animated fadeIn')
