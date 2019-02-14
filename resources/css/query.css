@@ -6,6 +6,7 @@
         width:100%;
         padding:0 2%;
     }
+
     .row{
         padding: 0 2%;
     }
@@ -60,6 +61,9 @@
         width:90%;
     }
 
+
+   
+
 }
 
 /* small phones to tablets: from 481 to 767px */
@@ -74,37 +78,7 @@
     section{padding:50px 0;}
 
     .logo {
-        height: 85px;
-    }
-
-    .main-nav{
-        float:left;
-        margin-top:30px;
-        list-style: none;
-    }
-    
-    .main-nav li{
-        display:block;
-        margin-right:40px;
-        
-    }
-    
-    .main-nav li a{
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size:90%;
-        transition: border-bottom 0.2s;
-        border-bottom: 1px solid transparent;
-        padding: 5px 0;
-    
-    }
-
-    .navbar i{
-        float:right;
-        color:#fff;
-        font-size: 170%;
-        margin-top: 30px;
+        height: 70px;
     }
 
     .long-copy{
@@ -147,6 +121,59 @@
     .section-form > .row{
         width:100%;
     }
+
+    /*-----Mobile-nav------*/
+
+    .mobile-nav-icon i{
+        display:inline-block;
+    }
+
+    .main-nav{
+        float:left;
+        margin-top:30px;
+        margin-left:20px;
+        list-style: none;
+        display:none;
+    }
+
+    .main-nav li{
+        display:block;
+        padding:7px 0;
+        
+    }
+
+    .main-nav li a{
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size:90%;
+        padding: 5px 0;
+        border:0;
+
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active{
+        border:0;
+    }
+
+    .sticky .mobile-nav-icon i{
+        color: rgb(114, 112, 112);
+        margin-top:15px;
+    }
+
+    .sticky .main-nav{
+        margin-top: 5px;
+        padding-bottom: 0;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        color: #555;
+        padding: 10px 0;
+    }
+
+
 
 }
 

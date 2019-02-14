@@ -41,4 +41,16 @@ $(document).ready(function(){
         offset:'50%'
     })
 
+    $('.mobile-nav-icon').on('click',function(){
+        const icon = $('.mobile-nav-icon i')
+        $('.main-nav').slideToggle(200);
+        if(icon.hasClass('fa-bars')){
+            icon.removeClass('fa-bars');
+            icon.addClass('fa-times');
+        }else{
+            icon.addClass('fa-bars');
+            icon.removeClass('fa-times')
+        }
+    })
+
 })

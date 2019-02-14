@@ -48,6 +48,10 @@ section{
     padding:1%;
 }
 
+.flex-col{
+    display:flex;
+}
+
 
 /*-------- Headings -------*/
 
@@ -230,7 +234,7 @@ header{
     display:none;
     height:50px;
     float:left;
-    margin:2px 0
+    margin:5px 0
 }
 
 /*-----Main-nav------*/
@@ -239,11 +243,12 @@ header{
     float:right;
     margin-top:60px;
     list-style: none;
+    display: inline-block;
 }
 
 .main-nav li{
     display:inline-block;
-    margin-right:40px;
+    margin-right:20px;
     
 }
 
@@ -273,7 +278,6 @@ header{
     background-color: rgba(255, 255, 255, 0.952);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
-
 }
 
 .sticky .main-nav{
@@ -294,17 +298,22 @@ header{
     display:block;
 
 }
+/*-----Mobile-nav------*/
 
-/*-------------------------------------------*/
-/* features section */
-/*-------------------------------------------*/
-.section-features .long-copy {
-    margin-bottom: 30px;
+.mobile-nav-icon i{
+    color:#fff;
+    font-size:180%;
+    float:right;
+    margin-top: 45px;
+    display:none;
+    cursor: pointer;
 }
 
-.flex-col{
-    display:flex;
+.mobile-nav-icon:hover,
+.mobile-nav-icon:active{
+    color:#fff;
 }
+
 
 /*-------------------------------------------*/
 /* Meals*/
